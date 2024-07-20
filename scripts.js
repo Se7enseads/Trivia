@@ -34,7 +34,7 @@ function sendMessage() {
         addBotMessage('Great! Now, please choose a difficulty level: Easy, Medium, or Hard.');
     } else if (!userPreferences.difficulty) {
         userPreferences.difficulty = message; // Save the user's difficulty preference
-        addBotMessage('Awesome! How many questions would you like to answer?');
+        addBotMessage('Awesome! How many questions would you like to answer?(limit 50)');
     } else if (!userPreferences.amount) {
         userPreferences.amount = message; // Save the user's amount preference
         fetchQuestions(); // Fetch questions from the server
